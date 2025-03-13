@@ -1,8 +1,9 @@
 ---
-import { Image } from "astro:assets"
 import Layout from "../layouts/Layout.astro"
 import HeaderInicio from "../components/HeaderInicio.astro"
 import Footer from "../components/Footer.astro"
+import Github from "../assets/img/github.png"
+import LinkedIn from "../assets/img/linkedin.png"
 ---
 
 <Layout>
@@ -21,11 +22,11 @@ import Footer from "../components/Footer.astro"
             <div class="redes">
     
                 <div class="links">
-                    <a href="https://github.com/Pelz1925/"><img src="/src/assets/github.png" alt="icono_git">GitHub</a>
+                    <a href="https://github.com/Pelz1925/"><img src={Github.src} alt="icono_git">GitHub</a>
                 </div>
     
                 <div class="links">
-                    <a href="https://www.linkedin.com/in/juan-miguel-llamas-034765194/"><img src="/src/assets/linkedin.png" alt="linkedin-logo">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/juan-miguel-llamas-034765194/"><img src={LinkedIn.src} alt="linkedin-logo">LinkedIn</a>
                     
                 </div>
     

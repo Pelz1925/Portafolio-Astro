@@ -1,0 +1,92 @@
+---
+import Layout from "../layouts/Layout.astro"
+import HeaderInicio from "../components/HeaderInicio.astro"
+import Footer from "../components/Footer.astro"
+---
+
+<Layout>
+    <HeaderInicio />
+    <div id="container">
+        <main class="subcontainer">
+    
+            <div class="presentacion">
+                <h1>Mis Redes</h1>
+                <p>
+                    A continuación encontrarás los sitios por los cuales ver mi trabajo y contactarme por el momento.
+                    Estaré actualizando nuevas redes pronto.
+                </p>
+            </div>
+    
+            <div class="redes">
+    
+                <div class="links">
+                    <a href="https://github.com/Pelz1925/"><img src="/src/assets/github.png" alt="icono_git">GitHub</a>
+                </div>
+    
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/juan-miguel-llamas-034765194/"><img src="/src/assets/linkedin.png" alt="linkedin-logo">LinkedIn</a>
+                    
+                </div>
+    
+            </div>
+            
+        </main>
+    </div>
+    <Footer />
+</Layout>
+
+
+
+<style>
+    .presentacion {
+    	text-align: center;
+    }
+    #container {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	height: 100vh;
+    }
+    #container main {
+    	width: 50%;
+        margin-bottom: 10rem;
+    }
+    #container main h1 {
+    	font-size: 2.5rem;
+    }
+    #container main p {
+    	font-size: 1.5rem;
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .links a {
+        background-color: #4b7a78;
+        color: white;
+        padding: 1rem;
+        text-decoration: none;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: row-reverse;
+    }
+    .links a:hover {
+        background-color: #3c5f5c;
+    }
+
+    img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
+</style>
